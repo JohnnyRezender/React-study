@@ -10,21 +10,19 @@ Na tela inicial (home), é exibida uma lista (estante) de categorias, onde cada 
 - Want to Read (quer ler)
 - Read (já leu)
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/e81f08a0-d343-45f1-b272-f8d79985bd0f/Screen_Shot_2021-05-05_at_11.16.19.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/e81f08a0-d343-45f1-b272-f8d79985bd0f/Screen_Shot_2021-05-05_at_11.16.19.png)
+![image](https://user-images.githubusercontent.com/47641122/121933582-a53dc800-cd1c-11eb-8dd2-c2642930e5d1.png)
+
 
 Cada livro tem um controle que permite selecionar uma estante para colocá-lo. Quando seleciona uma prateleira diferente, o livro é movido para ela, o valor padrão sempre deve ser a estante atual do livro.
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/ab5941bc-600d-46a3-9e4a-625bea633061/Screen_Shot_2021-05-05_at_11.16.38.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/ab5941bc-600d-46a3-9e4a-625bea633061/Screen_Shot_2021-05-05_at_11.16.38.png)
+![image](https://user-images.githubusercontent.com/47641122/121933610-acfd6c80-cd1c-11eb-86f4-5e18e57666cb.png)
 
 Na "home" também deve ter um um link para busca.
 
 Na pagina de busca deve haver um input de texto para buscar por um livro. Nos livros encontrados devem ter um controle para adicioná-los na biblioteca. 
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/f167907e-2a59-4e4e-89ee-b95cfdfad7b8/Screen_Shot_2021-05-05_at_11.16.52.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/f167907e-2a59-4e4e-89ee-b95cfdfad7b8/Screen_Shot_2021-05-05_at_11.16.52.png)
+![image](https://user-images.githubusercontent.com/47641122/121933673-bf77a600-cd1c-11eb-890c-c1f54c1d160e.png)
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/629ce6ea-02c2-42b5-a1c7-e714e65d6101/Screen_Shot_2021-05-05_at_11.17.02.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/629ce6ea-02c2-42b5-a1c7-e714e65d6101/Screen_Shot_2021-05-05_at_11.17.02.png)
-
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/a0a908d4-c4b4-4093-ba9f-a99d6987e3f8/Screen_Shot_2021-05-05_at_11.17.11.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/a0a908d4-c4b4-4093-ba9f-a99d6987e3f8/Screen_Shot_2021-05-05_at_11.17.11.png)
 
 Para manter uma interface consistente recomendamos reutilizar componentes usados anteriormente.
 
