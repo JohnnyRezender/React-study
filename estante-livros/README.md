@@ -1,70 +1,33 @@
-# Getting Started with Create React App
+# Projeto React
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Criar uma aplicação de estante de livros, onde podemos selecionar e classificar os livros que já lemos, estamos lendo ou vamos ler.
 
-## Available Scripts
+## Funcionalidades
 
-In the project directory, you can run:
+Na tela inicial (home), é exibida uma lista (estante) de categorias, onde cada uma delas contém vários livros. As 3 estantes são:
 
-### `npm start`
+- Currently Reading (lendo atualmente)
+- Want to Read (quer ler)
+- Read (já leu)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/e81f08a0-d343-45f1-b272-f8d79985bd0f/Screen_Shot_2021-05-05_at_11.16.19.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/e81f08a0-d343-45f1-b272-f8d79985bd0f/Screen_Shot_2021-05-05_at_11.16.19.png)
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Cada livro tem um controle que permite selecionar uma estante para colocá-lo. Quando seleciona uma prateleira diferente, o livro é movido para ela, o valor padrão sempre deve ser a estante atual do livro.
 
-### `npm test`
+![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/ab5941bc-600d-46a3-9e4a-625bea633061/Screen_Shot_2021-05-05_at_11.16.38.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/ab5941bc-600d-46a3-9e4a-625bea633061/Screen_Shot_2021-05-05_at_11.16.38.png)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Na "home" também deve ter um um link para busca.
 
-### `npm run build`
+Na pagina de busca deve haver um input de texto para buscar por um livro. Nos livros encontrados devem ter um controle para adicioná-los na biblioteca. 
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/f167907e-2a59-4e4e-89ee-b95cfdfad7b8/Screen_Shot_2021-05-05_at_11.16.52.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/f167907e-2a59-4e4e-89ee-b95cfdfad7b8/Screen_Shot_2021-05-05_at_11.16.52.png)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/629ce6ea-02c2-42b5-a1c7-e714e65d6101/Screen_Shot_2021-05-05_at_11.17.02.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/629ce6ea-02c2-42b5-a1c7-e714e65d6101/Screen_Shot_2021-05-05_at_11.17.02.png)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/a0a908d4-c4b4-4093-ba9f-a99d6987e3f8/Screen_Shot_2021-05-05_at_11.17.11.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/a0a908d4-c4b4-4093-ba9f-a99d6987e3f8/Screen_Shot_2021-05-05_at_11.17.11.png)
 
-### `npm run eject`
+Para manter uma interface consistente recomendamos reutilizar componentes usados anteriormente.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Quando um livro está na estante, ele deve ter o mesmo estado que na tela de busca.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+A página de busca também deve ter um link para voltar para a home
